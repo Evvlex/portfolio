@@ -119,17 +119,16 @@ html {
   }
   
   h2.toggle-header::before {
-    content: ">";
-    position: absolute;
-    left: 0;
-    transition: transform 0.3s ease;
-    display: inline-block;
-    transform: rotate(0deg);
-  }
-  
-  .collapsible.open h2.toggle-header::before {
-    transform: rotate(90deg);
-  }
+  content: "\003E";
+  display: inline-block;
+  margin-right: 0.5em;
+  transition: transform 0.3s ease;
+  transform: rotate(0deg);
+}
+
+.collapsible.open h2.toggle-header::before {
+  transform: rotate(90deg);
+}
 
   .section-content {
     max-height: 0;
