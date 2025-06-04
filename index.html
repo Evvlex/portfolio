@@ -7,12 +7,13 @@
   <title>Daniil Pedash - Portfolio</title>
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
   <div class="container">
     <header>
-      <h1>&lt;Daniil Pedash /&gt;</h1>
+      <h1>&lt;Daniil Pedash /<span class="spacer"></span>&gt;</h1>
       <nav>
         <a href="#about">about</a>
         <a href="#stack">stack</a>
@@ -21,50 +22,74 @@
       </nav>
     </header>
 
-    <section id="about">
-      <h2>&gt;about</h2>
-      <p>
-        Hi, I'm Daniil — a beginner web developer who enjoys building minimal, clean websites. I focus on writing structured code and learning modern web technologies step by step.
-      </p>
-      <p>
-        My goal is to join an Ausbildung program as a Web developer and grow into a skilled front-end specialist.
-        Im especially interested in becoming part of the team at 2peaches and developing high-quality web content.
-      </p>
+    <section id="about" class="collapsible">
+      <div class="section-header"> 
+        <h2 class="toggle-btn">&gt;about</h2>
+      </div>
+      <div class="section-content">
+        <p>
+          Hi, I'm Daniil — a beginner web developer who enjoys building minimal, clean websites. I focus on writing structured code and learning modern web technologies step by step.
+        </p>
+        <p>
+          My goal is to join an Ausbildung program as a Web developer and grow into a skilled front-end specialist.
+          Im especially interested in becoming part of the team at 2peaches and developing high-quality web content.
+        </p>
+      </div>
     </section>
 
-    <section id="stack">
-      <h2>&gt;stack</h2>
-      <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript (beginner)</li>
-        <li>Git & GitHub</li>
-        <li>VS Code</li>
-      </ul>
+    <section id="stack" class="collapsible">
+      <div class="section-header"> 
+        <h2 class="toggle-btn">&gt;stack</h2>
+      </div>
+      <div class="section-content">
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript (beginner)</li>
+          <li>Git & GitHub</li>
+          <li>VS Code</li>
+        </ul>
+      </div>
     </section>
 
-    <section id="projects">
-      <h2>&gt;projects</h2>
-      <p>Coming soon...</p>
+    <section id="projects" class="collapsible">
+      <div class="section-header"> 
+        <h2 class="toggle-btn">&gt;projects</h2>
+      </div>
+      <div class="section-content">
+        <p>Coming soon...</p>
+      </div>
     </section>
 
-    <section id="contact">
-      <h2>&gt;contact</h2>
-      <p>Send me a message if you're interested in working together:</p>
-      <form action="https://formsubmit.co/el/vikogu" method="POST">
-        <input type="text" name="name" placeholder="name" required />
-        <input type="email" name="email" placeholder="email" required />
-        <textarea name="message" placeholder="your message" required></textarea>
-        <button type="submit">send</button>
-      </form>
+    <section id="contact" class="collapsible">
+      <div class="section-header"> 
+        <h2 class="toggle-btn">&gt;contact</h2>
+      </div>
+      <div class="section-content">
+        <p>Send me a message if you're interested in working together:</p>
+        <form action="https://formsubmit.co/el/vikogu" method="POST">
+          <input type="text" name="name" placeholder="name" required />
+          <input type="email" name="email" placeholder="email" required />
+          <textarea name="message" placeholder="your message" required></textarea>
+          <button type="submit">send</button>
+        </form>
+      </div>
     </section>
 
     <footer>
       <p>&copy; 2025 Evvlex</p>
       <p>
-        <a href="https://github.com/Evvlex" target="_blank">GitHub</a> |
-        <a href="mailto:pedashdaniil@gmail.com">Email</a> |
-        <a href="https://www.linkedin.com/in/daniil-pedash-711316369/" target="_blank">LinkedIn</a>
+        <a href="https://github.com/Evvlex" target="_blank" aria-label="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+        &nbsp;
+        <a href="mailto:pedashdaniil@gmail.com" aria-label="Email">
+          <i class="fas fa-envelope"></i>
+        </a>
+        &nbsp;
+        <a href="https://www.linkedin.com/in/daniil-pedash-711316369/" target="_blank" aria-label="LinkedIn">
+          <i class="fab fa-linkedin"></i>
+        </a>
       </p>
     </footer>
   </div>
